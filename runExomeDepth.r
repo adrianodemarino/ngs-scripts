@@ -15,7 +15,7 @@ options(stringsAsFactors=FALSE) # crucial for handling BAM filenames as strings
 
 option_list = list(
   make_option(c("-b", "--bamlist"), action="store", default='', 
-              type='character', help="Path to list of BAMs"),
+              type='character', help="Path to list of BAMs [Full Path]"),
   make_option(c("-o", "--outdir"), action="store", default='./',
               type='character', help="Output directory [default %default]"),
   make_option(c("-v", "--verbose"), action="store_true", default=FALSE,
